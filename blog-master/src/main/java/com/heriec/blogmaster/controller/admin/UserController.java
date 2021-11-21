@@ -154,6 +154,7 @@ public class UserController {
     public Result modifyUserPersonalCenter(@RequestBody User user){
         User oldUser = userService.getUserById(user.getId());
         oldUser.setUsername(user.getUsername());
+        oldUser.setNick(user.getNick());
         oldUser.setAvatar(user.getAvatar());
         oldUser.setIntroduction(user.getIntroduction());
         boolean update = userService.update(oldUser, new UpdateWrapper<User>().eq("id",oldUser.getId()));

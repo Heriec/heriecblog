@@ -136,7 +136,6 @@ export default {
 
     wait() {
       makeIds(document.querySelector("#src-toc"));
-      console.log("等待结束");
       this.highlightCode();
       this.tocbotControl = tocbot.init({
         tocSelector: "#dest-toc", // ArticlePageToc的id,在ArticleSideBar.vue中设置
