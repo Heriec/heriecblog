@@ -1,0 +1,14 @@
+server:
+  port: 8089
+
+# 日志配置
+logging:
+  level:
+    com.heriec.blogmaster.mapper: debug # 设置指定包的日志级别（未指定的包按照root的日志级别执行）
+    root: info  # 定义项目日志级别（默认是info）
+  file:
+    path: /springboot/log # 配置日志输出到当前项目所在磁盘根路径下的/springboot/log目录下（也可以使用绝对路径）
+    name: springboot-blog.log
+#  pattern:
+#    console: '%d{yyyy-MM-dd HH:mm:ss.SSS} >>> [%thread] >>> %-5level >>> %logger{50} >>> %msg%n'
+

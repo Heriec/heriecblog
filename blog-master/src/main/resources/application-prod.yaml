@@ -1,0 +1,8 @@
+server:
+  port: 8089
+
+# 日志配置
+logging:
+  file:
+    path: /heriecblog/log # 配置日志输出到当前项目所在磁盘根路径下的/springboot/log目录下（也可以使用绝对路径）
+    name: heriecblog.log
