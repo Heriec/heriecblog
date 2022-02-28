@@ -2,7 +2,7 @@ import axios from 'axios'
 import router from '@/router'
 import Element from "element-ui"
 // axios.defaults.baseURL = 'https://api.datealive.top'
-axios.defaults.baseURL = 'http://47.96.114.93:8089'
+axios.defaults.baseURL = 'http://47.96.114.93:8090'
 // axios.defaults.baseURL = 'http://localhost:8089'
 // axios.defaults.withCredentials = true
 // axios.defaults.crossDomain = true;

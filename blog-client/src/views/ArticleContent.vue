@@ -114,10 +114,10 @@ export default {
           var style = document.createElement("style");
           style.type = "text/css";
           try{
-          　　style.appendChild(document.createTextNode(
+              style.appendChild(document.createTextNode(
             "img{ background-size: contain|cover;width:100%;height:auto;} "));
           }catch(ex){
-          　　style.styleSheet.cssText = "img{ background-size: contain|cover;width:100%;height:auto;} ";//针对IE
+              style.styleSheet.cssText = "img{ background-size: contain|cover;width:100%;height:auto;} ";//针对IE
           }
           img.appendChild(style);
           console.log(img)
@@ -140,7 +140,7 @@ export default {
       this.tocbotControl = tocbot.init({
         tocSelector: "#dest-toc", // ArticlePageToc的id,在ArticleSideBar.vue中设置
         contentSelector: "#src-toc", // ArticlePageContent的id,在ArticleContent.vue中设置
-        headingSelector: "h1, h2, h3, h4",
+        headingSelector: "h1, h2, h3, h4, h5, h6",
         hasInnerContainers: true,
         linkClass: "toc-link",
         activeLinkClass: "is-active-link",
